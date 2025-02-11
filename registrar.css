@@ -1,0 +1,133 @@
+ /* Estilos generales */
+ body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2d47d8, hsl(241, 96%, 18%));
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Contenedor principal */
+.login-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Encabezado */
+.login-header h2 {
+    font-size: 24px;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de campos de entrada */
+.input-container {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-container label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.input-container input:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Botón de registro */
+.btn-submit {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #388e3c;
+}
+
+/* Enlace de regreso al inicio de sesión */
+.register-link p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de versión */
+.footer-version {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* Estilo para las alertas */
+.alert {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Alerta de éxito */
+.alert.success {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #388E3C;
+}
+
+.alert.success a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Alerta de error */
+.alert.error {
+    background-color: #F44336;
+    color: white;
+    border: 1px solid #D32F2F;
+}

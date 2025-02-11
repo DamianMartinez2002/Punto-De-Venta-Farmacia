@@ -1,0 +1,189 @@
+/* Estilos generales para el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6584e7ce;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Ajuste en .container con más separación */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-left: 320px; /* Aumenté el margen izquierdo para más separación */
+}
+
+/* Estilo para el logo de la farmacia */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el logo de la imagen */
+.logo {
+    width: auto;
+    height: 100px; /* Ajusta la altura según el tamaño que desees */
+    transition: all 0.3s ease;
+}
+
+/* Efecto de hover en la imagen */
+.logo:hover {
+    opacity: 0.8; /* Efecto sutil al pasar el mouse */
+}
+
+/* Si deseas que la imagen esté redondeada */
+.logo {
+    border-radius: 8px;
+}
+
+
+/* Estilos para el formulario de usuario */
+.user-form {
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Estilos para inputs y selects */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo del botón */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Estilo para la tabla de usuarios */
+.user-table {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid hwb(0 6% 8%);
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos para el botón de eliminar */
+.btn-eliminar {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-eliminar:hover {
+    background-color: #d32f2f;
+}
+
+.btn-eliminar:active {
+    background-color: #c62828;
+}
+
+/* Estilos para el menú lateral */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #0a2ced;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+}
+
+.sidebar a:hover, .sidebar .active {
+    background-color: rgb(24, 18, 185);
+}
+
+.sidebar .logout {
+    background-color: red;
+}
+
+/* Ajuste en .container para la separación del menú con más espacio */
+.container {
+    margin-left: 320px; /* Aumento del margen para mayor separación */
+    padding: 20px;
+}
+
+/* Ajuste de márgenes para los formularios y tablas dentro de .container */
+.user-form, .user-table {
+    margin-left: 20px;
+}
+
+.user-form h2, .user-table h2 {
+    margin-bottom: 20px;
+}

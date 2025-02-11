@@ -1,0 +1,131 @@
+/* Aseguramos que el body y html ocupen todo el alto de la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Usamos Flexbox para que el body esté organizado en columnas */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100%;
+}
+
+/* Sidebar, ahora se extiende hasta el fondo de la página */
+.sidebar {
+    width: 250px;
+    background: hsl(213, 13%, 14%);
+    color: white;
+    padding-top: 20px;
+    height: 100vh;  /* Asegura que la barra lateral ocupe toda la altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar h3 {
+    color: #1f50d6;
+    text-align: center;
+    margin-bottom: 20px; /* Aumenta la separación */
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul li.active {
+    background: #1abc9c;
+}
+
+/* El contenedor principal ahora usa el espacio restante */
+.container {
+    padding: 20px;
+    flex-grow: 1;  /* Esto hace que el contenido principal ocupe el espacio restante */
+    overflow-y: auto;  /* Asegura que el contenido no desborde en pantallas pequeñas */
+}
+
+/* Estilos para el botón de cerrar sesión */
+.logout {
+    display: block;
+    text-align: center;
+    background: #e74c3c;
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+    padding: 12px;
+    margin: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px #861002fe;
+}
+
+.logout:hover {
+    background: #c0392b;
+    box-shadow: 0px 6px 12px #f11c04;
+}
+
+/* Estilos del formulario */
+form {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #bdc3c7;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}

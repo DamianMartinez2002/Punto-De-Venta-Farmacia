@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #3498db, hsl(204, 79%, 40%)); /* Gradiente radial de azul a verde */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: rgb(40, 41, 50);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+}
+
+.sidebar .logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo-container img {
+    width: 100px;
+    height: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background-color: #1a2b6b;
+}
+/* Estilos para el botón de cerrar sesión */
+.logout {
+    display: block;
+    text-align: center;
+    background: #e74c3c;
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+    padding: 12px;
+    margin: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px #861002fe;
+}
+
+.logout:hover {
+    background: #c0392b;
+    box-shadow: 0px 6px 12px #f11c04;
+}
+
+
+.corte-container {
+    background: radial-gradient(circle, hsl(203, 28%, 82%), hwb(110 38% 9%)); /* Gradiente radial de azul a verde */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+strong {
+    color: hsl(0, 0%, 0%);
+}
+
+.mensaje-exito {
+    color: #2ecc71;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.cerrar-corte-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cerrar-corte-btn:hover {
+    background-color: #c0392b;
+}

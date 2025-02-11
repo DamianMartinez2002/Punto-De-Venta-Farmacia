@@ -1,0 +1,139 @@
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilo del menú lateral */
+.sidebar {
+    width: 250px;
+    background: hsl(213, 13%, 14%);
+    color: white;
+    padding-top: 20px;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed; /* Mantener el menú fijo al lado izquierdo */
+}
+
+/* Estilo del logo */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* Estilo de la lista del menú */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo de los encabezados */
+.sidebar h3 {
+    color: #1f50d6;
+    text-align: center;
+    margin-bottom: 20px; /* Aumenta la separación */
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo de los enlaces del menú */
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+/* Estilo al pasar el ratón sobre los enlaces */
+.sidebar ul li a:hover {
+    background: #216fe4;
+}
+
+/* Estilo del enlace activo */
+.sidebar ul li.active {
+    background: #1abc9c;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    margin-left: 270px; /* Deja espacio para el menú lateral */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Estilo del botón de cerrar sesión */
+.logout {
+    display: block;
+    text-align: center;
+    background: #e74c3c;
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+    padding: 12px;
+    margin: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px #861002fe;
+}
+
+/* Estilo al pasar el ratón sobre el botón de cerrar sesión */
+.logout:hover {
+    background: #c0392b;
+    box-shadow: 0px 6px 12px #f11c04;
+}
+
+/* Estilos para el formulario de configuración de tienda */
+form {
+    background: hsl(192, 54%, 56%);
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+form button {
+    background-color: hsl(170, 7%, 18%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: hwb(215 25% 12%);
+}
+
+/* Mensaje de éxito o error */
+.mensaje {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
